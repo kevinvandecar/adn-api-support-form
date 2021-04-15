@@ -2,41 +2,11 @@
   color: red;
 }
 
-.productInfoContainer {
-  display: flex;
-  justify-content: space-between;
+.support-form {
+  margin-top: 20px;
 }
 
-.productInfoFieldContainer {
-  width: 30%;
+.account-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-
-.filesFieldContainer {
-  padding: 0 0 20px 0;
-}
-
-.field {
-  width: 100%;
-  padding: 10px 15px;
-  margin: 5px 0;
-  box-sizing: border-box;
-}
-
-.formButtonsContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.formButton {
-  width: 49%;
-  height: 30px;
-}
-
-#descriptionField {
-  height: 300px;
-}
-
-
-
-
-
