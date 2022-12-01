@@ -173,6 +173,11 @@
 
 <?php 
 
+
+function getCaseListingForAccount($accountNumber) {
+
+}
+
 function getDataFromJson($pathToJson) {
   $json = file_get_contents($pathToJson);
   $dataArray = json_decode($json, true);

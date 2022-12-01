@@ -1,8 +1,9 @@
 <?php 
-
+//
 // Get account information and data from the submitted form.
 $accountData = getAccountData();
 $formData = getFormData();
+$status = postNewCase($formData);
 
 // Create an array to hold all the data (account information and submitted form data).
 $dataArray = array();
@@ -67,6 +68,21 @@ function getFormData(){
     "description" => $_POST['description']
   );
   return $formData;
+}
+
+function postNewCase($formData){
+  /*$url = 'https://getcoreitnerface.zendesk.com/api/v2/tickets.json';
+
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_HEADER, false);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($curl, CURLOPT_POST, true);
+  curl_setopt($curl, CURLOPT_POSTFIELDS, $formData);
+
+  $json_response = curl_exec($curl);
+  $status_newcase = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+  curl_close($curl);  */
+  return $status_newcase;
 }
 
 // Upload attachments to the uploads directory and return the file information.
